@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project( wapiti )
-
+ 
 message("WAPITI_INSTALL_DIR=$ENV{WAPITI_INSTALL_DIR}")
 set(CMAKE_INSTALL_PREFIX  $ENV{WAPITI_INSTALL_DIR} )
 
@@ -14,4 +14,5 @@ install( TARGETS wapiti DESTINATION lib )
 
 set( CMAKE_VERBOSE_MAKEFILE on )
 
-#add_subdirectory("src")
+add_subdirectory("cmake/")
+add_subdirectory("src/")
