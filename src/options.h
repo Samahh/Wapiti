@@ -27,6 +27,10 @@
 #ifndef options_h
 #define options_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -93,6 +97,10 @@ struct opt_s {
 extern const opt_t opt_defaults;
 
 void opt_parse(int argc, char *argv[argc], opt_t *opt);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
 

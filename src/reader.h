@@ -28,6 +28,10 @@
 #ifndef reader_h
 #define reader_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -70,6 +74,11 @@ void rdr_load(rdr_t *rdr, FILE *file);
 void rdr_save(const rdr_t *rdr, FILE *file);
 
 char *rdr_readline(FILE *file);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
+
 
 #endif
 

@@ -28,6 +28,10 @@
 #ifndef decoder_h
 #define decoder_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -43,6 +47,12 @@ void tag_nbviterbi(mdl_t *mdl, const seq_t *seq, uint32_t N,
 
 void tag_label(mdl_t *mdl, FILE *fin, FILE *fout);
 void tag_eval(mdl_t *mdl, double *te, double *se);
+
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
+
 
 #endif
 

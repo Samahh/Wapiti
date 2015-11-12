@@ -27,6 +27,10 @@
 #ifndef tools_h
 #define tools_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -49,5 +53,9 @@ char *xstrdup(const char *str);
 
 char *ns_readstr(FILE *file);
 void ns_writestr(FILE *file, const char *str);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif

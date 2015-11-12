@@ -28,12 +28,20 @@
 #ifndef trainers_h
 #define trainers_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include "model.h"
 
 void trn_lbfgs(mdl_t *mdl);
 void trn_sgdl1(mdl_t *mdl);
 void trn_bcd(mdl_t *mdl);
 void trn_rprop(mdl_t *mdl);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
 

@@ -28,6 +28,10 @@
 #ifndef gradient_h
 #define gradient_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include "wapiti.h"
 #include "model.h"
 #include "sequence.h"
@@ -94,6 +98,10 @@ struct grd_s {
 grd_t *grd_new(mdl_t *mdl, double *g);
 void   grd_free(grd_t *grd);
 double grd_gradient(grd_t *grd);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
 

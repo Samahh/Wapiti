@@ -28,6 +28,10 @@
 #ifndef pattern_h
 #define pattern_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -52,6 +56,10 @@ struct pat_s {
 pat_t *pat_comp(char *p);
 char *pat_exec(const pat_t *pat, const tok_t *tok, uint32_t at);
 void pat_free(pat_t *pat);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
 

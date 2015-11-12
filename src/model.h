@@ -28,6 +28,10 @@
 #ifndef model_h
 #define model_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stddef.h>
 #include <stdint.h>
 #include <sys/time.h>
@@ -98,5 +102,9 @@ void mdl_sync(mdl_t *mdl);
 void mdl_compact(mdl_t *mdl);
 void mdl_save(mdl_t *mdl, FILE *file);
 void mdl_load(mdl_t *mdl, FILE *file);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif

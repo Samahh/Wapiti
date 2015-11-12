@@ -27,6 +27,10 @@
 #ifndef wapiti_h
 #define wapiti_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #define VERSION "1.5.0"
 
 /* XVM_ANSI:
@@ -54,6 +58,10 @@
 #ifdef MTH_ANSI
 #define ATM_ANSI
 #endif
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
 

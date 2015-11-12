@@ -28,6 +28,10 @@
 #ifndef vmath_h
 #define vmath_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdint.h>
 
 const char *xvm_mode(void);
@@ -47,6 +51,10 @@ void xvm_axpy(double r[], double a, const double x[], const double y[],
 		uint64_t N);
 
 void xvm_expma(double r[], const double x[], double a, uint64_t N);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
 

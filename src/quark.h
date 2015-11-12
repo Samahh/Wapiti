@@ -28,6 +28,10 @@
 #ifndef quark_h
 #define quark_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -42,6 +46,11 @@ const char *qrk_id2str(const qrk_t *qrk, uint64_t id);
 uint64_t qrk_str2id(qrk_t *qrk, const char *key);
 void qrk_load(qrk_t *qrk, FILE *file);
 void qrk_save(const qrk_t *qrk, FILE *file);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
+
 
 #endif
 

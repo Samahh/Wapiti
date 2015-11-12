@@ -28,6 +28,10 @@
 #ifndef sequence_h
 #define sequence_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+  
 #include <stddef.h>
 #include <stdint.h>
 
@@ -145,5 +149,9 @@ struct dat_s {
 	uint32_t   nseq;  //   S     Number of sequences in the set
 	seq_t    **seq;   //  [S]    List of sequences
 };
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif

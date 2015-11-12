@@ -28,6 +28,10 @@
 #ifndef thread_h
 #define thread_h
 
+#ifdef    __cplusplus
+extern "C" {
+#endif/*__cplusplus*/
+
 #include <stdint.h>
 #include <pthread.h>
 
@@ -39,5 +43,9 @@ typedef void (func_t)(job_t *job, uint32_t id, uint32_t cnt, void *ud);
 
 bool mth_getjob(job_t *job, uint32_t *cnt, uint32_t *pos);
 void mth_spawn(func_t *f, uint32_t W, void *ud[W], uint32_t size, uint32_t batch);
+
+#ifdef    __cplusplus
+}
+#endif/*__cplusplus*/
 
 #endif
