@@ -4,9 +4,9 @@
 # wapiti_INCLUDE_DIRS - include directories for wapiti
 # wapiti_LIBRARIES - libraries for wapiti
 FIND_PATH(wapiti_INCLUDE_DIRS wapiti.h
-PATHS $ENV{WAPITI_INCLUDE_DIR}/include)
+PATHS $ENV{WAPITI_INSTALL_DIR}/include)
 FIND_LIBRARY(wapiti_LIBRARIES NAMES wapiti
-PATHS $ENV{WAPITI_INCLUDE_DIR}/lib)
+PATHS $ENV{WAPITI_INSTALL_DIR}/lib)
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(wapiti DEFAULT_MSG
 wapiti_LIBRARIES
